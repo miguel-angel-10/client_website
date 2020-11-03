@@ -13,7 +13,18 @@
 
 <header>
   <nav>
-    <h2>header nav</h2>
+  
+    <h2>Bienveunue chez M&co</h2>
+    
+    <ul>
+      <li>
+        <a href="index.php">accueil</a> 
+      </li>
+      <li>
+        <a href="formulaire.php">s'identifier</a> 
+      </li>
+    </ul>
+  
   </nav>
 </header>
 
