@@ -1,26 +1,30 @@
 <!-- Footer include page -->
 
-<?php
-
-  ?>
+<?php  ?>
 
 <footer>
-             <h4> contactez-nous </h4>
-    <div class="footer-section">
-<<<<<<< HEAD
-      <ul>
-    
-=======
+
+  <div class="icons">
+    <a href="">
+       <i class="fab fa-twitter"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="">
+      <i class="fab fa-google-plus-square"></i>
+    </a>
+   
+  </div>
       <ul class="footerbox">
         <li class="footer-lien"><a href="#">lien</a></li>
         <li class="footer-lien"><a href="#">lien</a></li>
         <li class="footer-lien"><a href="#">lien</a></li>
         <li class="footer-lien"><a href="#">lien</a></li>
         <li class="footer-lien"><a href="#">lien</a></li>
->>>>>>> 9b57b2aaac31b656f5f22fbdd2f8839112bbee82
       </ul>
     </div>
   </footer>
 
-  
+
 </body>

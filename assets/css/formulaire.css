@@ -1,11 +1,5 @@
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+body {
+  background-color: #c7f9cc;
 }
 
 @media (min-width: 768px) {
@@ -17,12 +11,10 @@
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
-  margin: auto;
+  padding: 2rem;
+  margin: 5rem auto;
 }
-.form-signin .checkbox {
-  font-weight: 400;
-}
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;

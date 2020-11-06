@@ -1,0 +1,38 @@
+/* :root {
+
+} */
+.navig {
+  background-color: #38a3a5;
+}
+.containe {
+  display: flex;
+  width: 85%;
+  margin: 4rem auto;
+}
+aside {
+  background-color: #c7f9cc;
+  width: 20rem;
+  /* height: 80vh; */
+  border-radius: 5px;
+  margin-right: 1rem;
+  padding: 10px;
+  box-shadow: 0 0 15px #57cc99;
+}
+
+.users-card {
+  display: flex;
+  border-bottom: 1.5px solid grey;
+  padding-top: 15px;
+}
+.fas {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.user-name {
+  margin-bottom: 5px;
+}
+.status {
+  font-size: .7rem;
+  margin-bottom: 2px;
+  padding-top: 0;
+}

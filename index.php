@@ -1,18 +1,19 @@
+<?php 
+  if( session_status() == PHP_SESSION_NONE ) {
+    session_start();
+   # $_SESSION['email'] = $_POST['email'];
+  } else {
+    $email = $_SESSION['email'] ;
+  }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
-<<<<<<< HEAD
-  <?php include( 'templates/header.php' ); ?>
-=======
- 
   
 <!-- fichier php  -->
 
 <?php include( 'templates/header.php' ); ?> 
 
-
-  <label for="s'identifier"></label>
-  <input type="button" value="s'identifier">
 
 <div class="imgpara">
 
@@ -36,13 +37,6 @@
 </div>
 
 </div>
-  
-
-
-
-
- 
->>>>>>> 9b57b2aaac31b656f5f22fbdd2f8839112bbee82
  
 
   <?php include( 'templates/footer.php' ); ?>
