@@ -1,31 +1,9 @@
 <?php
-  # check session. starts session if not initialized
-  session_start();
-  if( session_status() == PHP_SESSION_NONE ) {
-    session_start();
-    $_SESSION['email'] = $_POST['email'];
-    $email = $_SESSION['email'] ;
-  }
+ 
+  require_once 'config/connectiondb.php'; 
+
   
-
-  # connect to db
-  $conn = new PDO( 'mysql:host=localhost;dbname=employees', 'root', '' );
-  # test if connected
-  if( !$conn ){
-    echo 'pas connection';
-    print_r( $conn->errorInfo() );
-  }
-
-  # prepare sql query
-  $sql = $conn->prepare( 'SELECT * FROM employee');
-
-  $sql->execute();
-
-  $result = $sql->fetchAll( PDO::FETCH_ASSOC );
-
-  $conn = NULL;
-  $sql = NULL;
-
+// print_r( $result)
 ?>
 
 
@@ -46,14 +24,14 @@
 </div>
 
     <h1>Dashboard</h1>
-    <p> <?php echo htmlspecialchars( $email ) ?> </p>
+   
     <p><a class="btn alert-warning" href="logout.php">Déconnexion</a></p>
   
   <section class="containe">
     <aside>
       <h3>USERS</h3>
       <ul>
-        <?php foreach ($result as $key => $value) : ?>
+        <?php foreach ( $result as $key => $value ) : ?>
           
         
         <li class="users-card">
@@ -76,7 +54,7 @@
             <th scope="col">#</th>
             <th scope="col"> Prenom</th>
             <th scope="col">Nom </th>
-            <th scope="col">Position </th>
+            <th scope="col">Created </th>
             <th scope="col">email </th>
           </tr>
         </thead>
@@ -87,8 +65,9 @@
           <th scope="row"><?php echo $employee['id'] ?></th>
           <td> <?php echo $employee['emplo_name'] ?> </td>
           <td class="table-striped"> <?php echo $employee['emplo_lastname'] ?> </td>
-          <td> <?php echo $employee['position'] ?> </td>
+          <td> <?php echo $employee['created_at'] ?> </td>
           <td> <?php echo $employee['email'] ?> </td>
+      
         </tr>
       <?php endforeach ?>
         </tbody>

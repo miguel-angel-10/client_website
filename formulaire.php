@@ -3,17 +3,10 @@
 
   if( isset(  $_POST['submit']  ) ) {
 
-    # check session. starts session if not initialized
-    if( session_status() == PHP_SESSION_NONE ) {
-      session_start();
-      $_SESSION['email'] = $_POST['email'];
-    }
 
     header( 'location: dashboard.php' ); 
 
-  } else {
-    header( 'location: dashboard.php' );
-  }
+  } 
 ?>
 
 <!DOCTYPE html>

@@ -1,10 +1,5 @@
 <?php 
-  if( session_status() == PHP_SESSION_NONE ) {
-    session_start();
-   # $_SESSION['email'] = $_POST['email'];
-  } else {
-    $email = $_SESSION['email'] ;
-  }
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
